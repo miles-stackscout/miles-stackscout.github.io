@@ -1,29 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>TenderPulse – Government Tender Alerts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenderPulse – Government Tender Alerts for Australian Businesses</title>
+    <meta name="description" content="Daily Australian government tender alerts filtered to your industry. 14-day free trial. No credit card required.">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f7fc; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; text-align: center; }
-        h1 { font-size: 2.5rem; }
-        .cta-button { background: #0066cc; color: white; padding: 1rem 2rem; font-size: 1.2rem; border-radius: 8px; text-decoration: none; display: inline-block; margin: 1rem 0; }
-        .benefits { text-align: left; background: white; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a2b3c;
+            background: #ffffff;
+        }
+        .header {
+            background: #0a2540;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0a2540;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #4a5b6e;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 40px;
+            margin: 1.5rem 0;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(0,102,204,0.2);
+        }
+        .cta-button:hover {
+            background: #004999;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #0a2540;
+        }
+        .feature-card p {
+            color: #4a5b6e;
+        }
+        .trust-badge {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f1f5f9;
+            border-radius: 16px;
+        }
+        .trust-badge p {
+            font-size: 0.9rem;
+            color: #2c5f8a;
+        }
+        .footer {
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        .footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <span>🇦🇺 TenderPulse – Australian Government Tender Alerts</span>
+    </div>
     <div class="container">
-        <h1>🔔 TenderPulse</h1>
-        <p>Never miss a government contract again. Daily alerts delivered to your phone.</p>
-        <a href="https://buy.stripe.com/dRmfZhet71L4ggd9B543S02" class="cta-button">Start 14‑Day Free Trial →</a>
-        <div class="benefits">
-            <ul>
-                <li>✅ Filtered by your trade (electrical, construction, IT, cleaning, plumbing)</li>
-                <li>✅ Real contracts worth $10k–$5M</li>
-                <li>✅ Cancel anytime – no credit card needed for trial</li>
-            </ul>
+        <div class="hero">
+            <h1>Never Miss a Government Contract Again</h1>
+            <p>Daily alerts for NSW and Australian Government tenders, filtered to your industry. Join hundreds of Australian businesses winning more work.</p>
+            <a href="https://buy.stripe.com/dRmfZhet71L4ggd9B543S02" class="cta-button">Start 14‑Day Free Trial →</a>
+            <div style="font-size: 0.8rem; color: #6c757d;">No credit card required • Cancel anytime</div>
         </div>
-        <p><a href="https://billing.stripe.com/p/login/14A9AT84J75oe85eVp43S00">Manage your subscription</a></p>
-        <p>© 2026 TenderPulse</p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎯 Filtered to Your Trade</h3>
+                <p>Electrical, construction, IT, cleaning, plumbing – only tenders you actually want.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Delivered to Your Phone</h3>
+                <p>Instant alerts via Telegram. No more searching AusTender manually.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💰 High-Value Contracts</h3>
+                <p>Real opportunities from $10k up to $5M+. We surface the ones that matter.</p>
+            </div>
+        </div>
+        <div class="trust-badge">
+            <p>✅ Trusted by small businesses across Australia • 14‑day free trial • Cancel with one click</p>
+        </div>
+        <div style="background: #e6f7e6; border-left: 4px solid #2e7d32; padding: 1rem; border-radius: 8px; margin: 2rem 0;">
+            <p style="margin: 0; font-weight: 500;">🔍 Example tender we found this week:</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;"><strong>$5,026,343 – Web Content Delivery Network</strong> (Bureau of Meteorology)</p>
+        </div>
+        <div class="footer">
+            <p>© 2026 TenderPulse • <a href="mailto:hello@tenderpulse.com">Contact</a> • <a href="https://billing.stripe.com/p/login/14A9AT84J75oe85eVp43S00">Manage Subscription</a></p>
+            <p style="margin-top: 0.5rem;">Data sourced from AusTender OCDS API | Built in Australia</p>
+        </div>
     </div>
 </body>
 </html>
